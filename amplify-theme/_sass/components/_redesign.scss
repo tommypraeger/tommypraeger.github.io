@@ -186,7 +186,9 @@
         font-weight: 500;
         width: 50px;
         background: transparent;
-        border: none;
+        border-bottom: 2px solid;
+		border-color: transparent;
+        transition: border-color 0.2s;
         border-radius: 0px;
         -webkit-border-radius: 0px;
         -moz-border-radius: 0px;
@@ -196,6 +198,7 @@
 		&:focus,
 		&:active {
             border-bottom: 2px solid #FF9900;
+            transition: border-color 0.2s;
             cursor: pointer;
 		}
     }
@@ -1973,6 +1976,11 @@ li {
                 border-bottom: 2px solid white;
                 transition: border-color 0.2s;
             }
+        }
+
+        select:hover {
+            border-bottom: 2px solid white;
+            transition: border-color 0.2s;
         }
     }
     
