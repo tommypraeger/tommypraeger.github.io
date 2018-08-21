@@ -165,7 +165,7 @@
 						<div class="cloud-col">
 							<div class="row">
 								{% for item in page.cloud_grid_left %}
-									<a href="{% if jekyll.environment == 'production' %}{{ site.amplify.baseurl }}{% endif %}{{ item.url }}" class="cloud-grid-item cloud-grid-item-left">
+									<a href="{% if jekyll.environment == 'production' %}{{ site.amplify.docs_baseurl }}{% endif %}{{ item.url }}" class="cloud-grid-item cloud-grid-item-left">
 										<div class="platforms-container hidden-xs">
 											{% for platform in item.platforms %}
 												<img class="platform-logo" src="{% if jekyll.environment == 'production' %}{{ site.amplify.baseurl }}{% endif %}{{ platform.url }}" />
@@ -183,7 +183,7 @@
 						<div class="cloud-col" id="right-cloud-col">
 							<div class="row">
 								{% for item in page.cloud_grid_right %}
-									<a href="{% if jekyll.environment == 'production' %}{{ site.amplify.baseurl }}{% endif %}{{ item.url }}" class="cloud-grid-item cloud-grid-item-right">
+									<a href="{% if jekyll.environment == 'production' %}{{ site.amplify.docs_baseurl }}{% endif %}{{ item.url }}" class="cloud-grid-item cloud-grid-item-right">
 										<div class="platforms-container hidden-xs">
 											{% for platform in item.platforms %}
 												<img class="platform-logo" src="{% if jekyll.environment == 'production' %}{{ site.amplify.baseurl }}{% endif %}{{ platform.url }}" />
@@ -203,7 +203,7 @@
 						<p class="launch-grid-title">Utilities</p>
 						<div class="row">
 							{% for item in page.utility_modules %}
-									<a href="{% if jekyll.environment == 'production' %}{{ site.amplify.baseurl }}{% endif %}{{ item.url }}" class="cloud-grid-item">
+									<a href="{% if jekyll.environment == 'production' %}{{ site.amplify.docs_baseurl }}{% endif %}{{ item.url }}" class="cloud-grid-item">
 										<div class="platforms-container hidden-xs">
 											{% for platform in item.platforms %}
 												<img class="platform-logo" src="{% if jekyll.environment == 'production' %}{{ site.amplify.baseurl }}{% endif %}{{ platform.url }}" />

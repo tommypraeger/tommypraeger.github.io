@@ -30,7 +30,7 @@
 				</li>
 			{% endfor %}
 			<li>
-				<a href="{% if jekyll.environment == 'production' %}{{ site.amplify.baseurl }}{% endif %}/api">
+				<a href="{% if jekyll.environment == 'production' %}{{ site.amplify.docs_baseurl }}{% endif %}/api">
 					API
 				</a>
 			</li>
@@ -83,8 +83,8 @@
 								<option selected disabled value="default">API</option>
 								<option value="https://aws.github.io/aws-sdk-ios/docs/reference/">iOS</option>
 								<option value="https://aws.github.io/aws-sdk-android/docs/reference/">Android</option>
-								<option value="{% if jekyll.environment == 'production' %}{{ site.amplify.baseurl }}{% endif %}/api/">JavaScript</option>
-								<option value="{% if jekyll.environment == 'production' %}{{ site.amplify.baseurl }}{% endif %}/api/">React Native</option>
+								<option value="{% if jekyll.environment == 'production' %}{{ site.amplify.docs_baseurl }}{% endif %}/api/">JavaScript</option>
+								<option value="{% if jekyll.environment == 'production' %}{{ site.amplify.docs_baseurl }}{% endif %}/api/">React Native</option>
 							</select>
 						</li>
 						<li class="site-search" id="search-input-box">
