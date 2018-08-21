@@ -187,7 +187,17 @@
         width: 50px;
         background: transparent;
         border: none;
+        border-radius: 0px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
         //-webkit-appearance: none;
+
+        &:hover,
+		&:focus,
+		&:active {
+            border-bottom: 2px solid #FF9900;
+            cursor: pointer;
+		}
     }
 
     #api-select {
@@ -231,7 +241,7 @@
 		&:hover,
 		&:focus,
 		&:active {
-			border-color: orange;
+			border-color: #FF9900;
 		}
 	}
 
@@ -550,7 +560,7 @@ a {
     }
 
 	color: $color-dark-blue;
-	//background-image: url("{% if jekyll.environment == 'production' %}{{ site.amplify.baseurl }}{% endif %}/images/layout/background.jpg");
+	//background-image: url("/images/layout/background.jpg");
 	background: linear-gradient(to right, #FF9900 70%,#fccf30);
 	//padding: 3.75rem 0 (4.6875rem - 1.25rem) 0;
 	background-position: center;
@@ -1181,6 +1191,10 @@ a {
             width: auto !important;
             padding: 0 30px !important;
         }
+    }
+
+    .above-code-block {
+        margin-bottom: 10px;
     }
 }
 
@@ -2377,6 +2391,16 @@ li {
                 filter: brightness(0) invert(1);
                 cursor: pointer;
             }
+        }
+
+        .js-library-selector:hover {
+            background-color: #FFA41D;
+            cursor: pointer;
+        }
+        
+        .js-library-selector:focus {
+            background-color: #E88B01;
+            cursor: pointer;
         }
 
         .js-library-selector-text {
