@@ -428,11 +428,25 @@
 			window.open(api_select.value, '_blank');
 			api_select.value = "default";
 		}
-		console.log(api_select.value);
 	}
 	let api_select = document.getElementById('api-select');
 	if (api_select) api_select.addEventListener("change", apiLink);
-	
+
+	let docsLink = function() {
+		let docs_select = document.getElementById('docs-select');
+		if (docs_select.value != "default") {
+			if (docs_select.value.includes("aws-mobile")) {
+				window.open(docs_select.value, '_blank');
+				docs_select.value = "default";
+			}
+			else {
+				window.open(docs_select.value, '_self');
+			}
+		}
+	}
+	let docs_select = document.getElementById('docs-select');
+	if (docs_select) docs_select.addEventListener("change", docsLink);
+
 }( jQuery ) );
 
 	/**
