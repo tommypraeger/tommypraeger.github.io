@@ -428,7 +428,7 @@
 	if (offcanvas_toggle) offcanvas_toggle.addEventListener("click", moveOffCanvasToggle);
 	$('meta[name=viewport]').attr('content', 'width=device-width,initial-scale=1,maximum-scale=1');
 
-	let apiLink = function() {
+	/*let apiLink = function() {
 		let api_select = document.getElementById('api-select');
 		if (api_select.value != "default") {
 			window.open(api_select.value, '_blank');
@@ -452,6 +452,7 @@
 	}
 	let docs_select = document.getElementById('docs-select');
 	if (docs_select) docs_select.addEventListener("change", docsLink);
+	*/
 
 }( jQuery ) );
 
