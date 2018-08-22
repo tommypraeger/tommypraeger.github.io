@@ -87,7 +87,7 @@ cloud_grid_right:
       - title: React
         url: '/images/Logos/React-Small-Grey.png'
 
-utility_modules:
+utilities:
   - title: Cache
     excerpt: A generic LRU cache for storing data with priority and expiration settings.
     url: '/media/cache_guide'  
@@ -126,6 +126,8 @@ utility_modules:
     platforms:
       - title: Web
         url: '/images/Logos/Web-Small-Grey.png'
+      - title: PWA
+        url: '/images/Logos/PWA-icon.png'
 
 # Grid navigation
 grid_navigation:

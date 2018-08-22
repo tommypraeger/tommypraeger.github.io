@@ -161,7 +161,7 @@
 				</div> -->
 				<div class="grids-container inline-block">
 					<div class="cloud-grid">
-						<p class="launch-grid-title">Cloud Features</p>
+						<p class="launch-grid-title">Categories</p>
 						<div class="cloud-col">
 							<div class="row">
 								{% for item in page.cloud_grid_left %}
@@ -202,7 +202,7 @@
 					<div class="utility-modules-grid">
 						<p class="launch-grid-title">Utilities</p>
 						<div class="row">
-							{% for item in page.utility_modules %}
+							{% for item in page.utilities %}
 									<a href="{% if jekyll.environment == 'production' %}{{ site.amplify.docs_baseurl }}{% endif %}{{ item.url }}" class="cloud-grid-item">
 										<div class="platforms-container hidden-xs">
 											{% for platform in item.platforms %}

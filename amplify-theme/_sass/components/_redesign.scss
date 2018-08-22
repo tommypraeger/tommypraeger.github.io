@@ -214,10 +214,6 @@
 	li {
 		+ li {
             margin-left: 2.5rem;
-            
-            @media (max-width: 942px) {
-                margin-left: 1.5rem;
-            }
 		}
 	}
 
@@ -257,10 +253,6 @@
     height: 36px;
     width: 180px;
     margin-top: -7px;
-
-    @media (max-width: 859px) {
-        width: 150px;
-    }
     
     .search-image {
         margin-left: 12px;
@@ -280,9 +272,6 @@
         line-height: 24px;
         max-width: 150px;
 
-        @media (max-width: 859px) {
-            max-width: 120px;
-        }
     }
     #search-input:focus {
         outline: none;
@@ -978,7 +967,7 @@ a {
             right: 5px;
 
             .platform-logo {
-                width: 15px;
+                height: 15px;
             }
         }
     }

@@ -70,9 +70,6 @@ amplify:
             - item_name: Get Started
               item_url: '/media/get_started'
               id: get_started
-            - item_name: Tutorials
-              item_url: '/media/tutorials'
-              id: tutorials
             - item_name: Toolchain
               item_url: '/media/toolchain'
               id: toolchain
