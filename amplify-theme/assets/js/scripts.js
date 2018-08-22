@@ -316,7 +316,7 @@
 	}
 
 	//Handle click for notification bar
-	$( 	'div.row.notification-bar.close-button' )
+	$( 	'div.notification-bar .close-button' )
 		.click( function( event ) {
 			Cookies.set('notificationMessage_LastReceived', new String( new Date() ) );
 			Cookies.set('notificationStatus', 'none');
