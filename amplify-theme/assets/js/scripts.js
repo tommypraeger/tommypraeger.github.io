@@ -316,7 +316,7 @@
 	}
 
 	//Handle click for notification bar
-	$( 	'div.row.notification-bar a' )
+	$( 	'div.row.notification-bar.close-button' )
 		.click( function( event ) {
 			Cookies.set('notificationMessage_LastReceived', new String( new Date() ) );
 			Cookies.set('notificationStatus', 'none');
@@ -327,6 +327,7 @@
 			} else {
 				return false;
 			}
+			
 		}
 	);
 
@@ -351,24 +352,26 @@
 	}
 
 	// When the last message is received. Typicaly the announcement time
-	showNotificationBar( new Date('August 1, 2018 11:42:00') );
+	showNotificationBar( new Date('August 22, 2018 11:00:00') );
 
 	// Hide magnifying glass in search bar
+	// var hideSearchIcon = function() {
+	// 	let search_box = document.getElementById("search-input")
+	// 	search_box.onclick = function() {
+	// 		document.getElementById("search-image").style.display = "none";
+	// 		search_box.style.outline = "none";
+	// 		search_box.placeholder = "Search";
+	// 		search_box.style.paddingLeft = "2px";
+	// 	}
+	// }
 
-	var hideSearchIcon = function() {
-		let search_box = document.getElementById("search-input")
-		search_box.onclick = function() {
-			document.getElementById("search-image").style.display = "none";
-			search_box.style.outline = "none";
-			search_box.placeholder = "Search";
-			search_box.style.paddingLeft = "2px";
-		}
-	}
+	//hideSearchIcon();
 
-	hideSearchIcon();
-
-	// temporary for editing notif bar
-	//document.getElementById("notification-bar").style.display = "block";
+	// Hide notif bar
+	document.getElementById("close-notif").addEventListener("click", function() {
+		document.getElementById("notification-bar").style.display = "none";
+	});
+	
 
 	var addLineNumbers = function() {
 		var pre = document.getElementsByTagName('pre'), pl = pre.length;
