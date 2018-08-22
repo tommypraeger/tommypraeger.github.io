@@ -44,7 +44,7 @@
 	//width: 1442px;
 	//height:  75px;
 	//border-bottom: 1px solid rgba($color-dark-blue, .15);
-	z-index:999;
+	z-index: 1000;
     background-color:white;
     margin: auto;
     width: 100%;
@@ -2358,7 +2358,7 @@ li {
         }
 
         .js-library-selector {
-            z-index: 99999;
+            z-index: 999;
             background-color: #FF9900;
             border-radius: 4px;
             position: absolute;
