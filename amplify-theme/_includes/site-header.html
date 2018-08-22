@@ -28,6 +28,11 @@
 				</li>
 			{% endfor %}
 			<li>
+				<a href="{% if jekyll.environment == 'production' %}{{ site.amplify.docs_baseurl }}{% endif %}/media/quick_start?platform=purejs">
+					Docs
+				</a>
+			</li>
+			<li>
 				<a href="{% if jekyll.environment == 'production' %}{{ site.amplify.docs_baseurl }}{% endif %}/api">
 					API
 				</a>
