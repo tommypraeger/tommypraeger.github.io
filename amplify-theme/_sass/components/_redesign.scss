@@ -1339,7 +1339,6 @@ body {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    height: 50px;
     width: 100%;
     background-color: #31465F;
     //width: 101%;
@@ -1364,19 +1363,20 @@ body {
 
     .notification-content {
         margin-top: 8px;
+        width: 95%;
         display: inline-block;
         text-align: center;
-    }
 
-    .notification-text {
-        color: #FFFFFF;
-        font-family: "Amazon Ember", "Helvetica", sans-serif;
-        font-size: 16px;
-        line-height: 24px;
-        width: 105%;
-    }
-    img {
-        float: left;
+        .notification-text {
+            color: #FFFFFF;
+            font-family: "Amazon Ember", "Helvetica", sans-serif;
+            font-size: 16px;
+            line-height: 24px;
+            display: inline-block;
+        }
+        img {
+            display: inline-block;
+        }
     }
 
     a {
