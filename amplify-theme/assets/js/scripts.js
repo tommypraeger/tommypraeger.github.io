@@ -320,7 +320,7 @@
 		.click( function( event ) {
 			Cookies.set('notificationMessage_LastReceived', new String( new Date() ) );
 			Cookies.set('notificationStatus', 'none');
-			$( 'div.row.notification-bar' ).hide();
+			$( 'div.notification-bar' ).hide();
 
 			if ( this.className == 'link-button' ) {
 				// go to link
@@ -343,7 +343,8 @@
 		
 		// new message reveived
 		if ( messageDate.getTime() > lastMessageReceived.getTime() ){
-			$( 'div.row.notification-bar' ).show();
+			//console.log(messageDate.getTime(), lastMessageReceived.getTime());
+			$( 'div.notification-bar' ).show();
 			Cookies.set('notificationStatus', 'received');
 		} else {
 			// do nothing
@@ -352,7 +353,7 @@
 	}
 
 	// When the last message is received. Typicaly the announcement time
-	showNotificationBar( new Date('August 22, 2018 11:00:00') );
+	showNotificationBar( new Date('August 23, 2018 11:00:00') );
 
 	// Hide magnifying glass in search bar
 	// var hideSearchIcon = function() {
