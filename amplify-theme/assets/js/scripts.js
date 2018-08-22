@@ -369,10 +369,12 @@
 	//hideSearchIcon();
 
 	// Hide notif bar
-	document.getElementById("close-notif").addEventListener("click", function() {
-		document.getElementById("notification-bar").style.display = "none";
-	});
-	
+	let close_notif = document.getElementById("close-notif");
+	if (close_notif){
+		close_notif.addEventListener("click", function() {
+			document.getElementById("notification-bar").style.display = "none";
+		});
+	}
 
 	var addLineNumbers = function() {
 		var pre = document.getElementsByTagName('pre'), pl = pre.length;
