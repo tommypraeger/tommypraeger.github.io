@@ -39,6 +39,15 @@
     }
 }
 
+.inline-bash {
+    display: inline-block;
+    font-family: "Source Code Pro",monospace;
+    color: #c0341d;
+    background-color: #fcefed;
+    border-radius: .1875rem;
+    padding: .125rem .375rem .1875rem .375rem;
+}
+
 .site-header {
 	position: fixed;
 	//width: 1442px;
