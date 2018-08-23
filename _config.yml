@@ -84,16 +84,16 @@ amplify:
             logo:
                 text: AWS Amplify is supported by Amazon Web Services
                 image: true
-            copyright: © 2017-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+            copyright: © 2018, Amazon Web Services, Inc. or its affiliates. All rights reserved.
         social_list:
             - network_name: gitter
               profile_url: 'https://gitter.im/AWS-Amplify/Lobby/'
             - network_name: github
-              profile_url: 'https://github.com/aws-amplify/amplify-js'
+              profile_url: 'https://github.com/aws-amplify'
             - network_name: twitter
-              profile_url: 'https://twitter.com/search?q=%23awsamplify&src=typd'
+              profile_url: 'https://twitter.com/awsformobile'
             - network_name: youtube
-              profile_url: 'https://www.youtube.com/watch?v=vAjf3lyjf8c'
+              profile_url: 'https://www.youtube.com/channel/UCd6MoB9NC6uYN2grvUNT-Zg'
               
     google_analytics:
         tracking_code: # Add your Google Analytics tracking code to activate Google Analytics
