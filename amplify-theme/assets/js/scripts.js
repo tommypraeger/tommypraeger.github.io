@@ -315,6 +315,25 @@
 		}
 	}
 
+	if ( $.urlParam( 'fromawsmobile' )) {
+		console.log($.urlParam( 'fromawsmobile' ))
+		if ( $.urlParam( 'fromawsmobile' ) == 'true') {
+			if ($('.from-awsmobile')) {
+				$('.from-awsmobile').show();
+			}
+		}
+		else {
+			if ($('.from-awsmobile')) {
+				$('.from-awsmobile').hide();
+			}
+		}
+	}
+	else {
+		if ($('.from-awsmobile')) {
+			$('.from-awsmobile').hide();
+		}
+	}
+
 	//Handle click for notification bar
 	$( 	'div.notification-bar .close-button' )
 		.click( function( event ) {
