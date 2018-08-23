@@ -316,7 +316,7 @@
 	}
 
 	if ( $.urlParam( 'fromawsmobile' )) {
-		console.log($.urlParam( 'fromawsmobile' ))
+		//console.log($.urlParam( 'fromawsmobile' ))
 		if ( $.urlParam( 'fromawsmobile' ) == 'true') {
 			if ($('.from-awsmobile')) {
 				$('.from-awsmobile').show();
