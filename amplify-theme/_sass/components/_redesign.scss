@@ -2476,7 +2476,7 @@ li {
             font-size: 16px;
             line-height: 24px;
             font-weight: 500;
-            margin: 5px 20px 5px 10px;
+            margin: 5px 10px;
             border: none;
             cursor: pointer;
         }
@@ -2484,6 +2484,10 @@ li {
         .arrows {
             -webkit-appearance: menulist;
             -moz-appearance: menulist;
+            display: inline-block;
+            width: 12px;
+            vertical-align: middle;
+            margin-right: 5px;
         }
         
         .dropdown {
