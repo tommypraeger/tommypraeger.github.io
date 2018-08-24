@@ -195,6 +195,8 @@
         font-weight: 500;
         border: none;
         cursor: pointer;
+        -webkit-appearance: menulist;
+        -moz-appearance: menulist;
     }
     
     .dropdown {
@@ -2532,8 +2534,6 @@ li {
             position: absolute;
             top: 53px;
             right: 27px;
-            -webkit-appearance: menulist;
-            -moz-appearance: menulist;
 
             @media (max-width: 828px) {
                 position: static;
