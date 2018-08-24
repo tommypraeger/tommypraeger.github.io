@@ -2476,7 +2476,7 @@ li {
             font-size: 16px;
             line-height: 24px;
             font-weight: 500;
-            margin: 5px 15px 5px 5px;
+            margin: 5px 20px 5px 10px;
             border: none;
             cursor: pointer;
         }
@@ -2544,6 +2544,7 @@ li {
             img {
                 height: 20px;
                 left: 4px;
+                margin-left: 5px;
                 position: relative;
                 vertical-align: text-bottom;
                 filter: brightness(0) invert(1);
