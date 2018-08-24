@@ -195,8 +195,6 @@
         font-weight: 500;
         border: none;
         cursor: pointer;
-        -webkit-appearance: menulist;
-        -moz-appearance: menulist;
     }
     
     .dropdown {
@@ -2481,6 +2479,8 @@ li {
             margin: 5px 20px 5px 10px;
             border: none;
             cursor: pointer;
+            -webkit-appearance: menulist;
+            -moz-appearance: menulist;
         }
         
         .dropdown {
