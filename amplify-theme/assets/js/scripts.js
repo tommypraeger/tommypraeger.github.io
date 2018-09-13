@@ -93,7 +93,7 @@
 			Cookies.set('notificationStatus', 'none');
 			$( 'div.notification-bar' ).hide();
 			setScroll(70);
-			let smoothScrollOffset = 85;
+			smoothScrollOffset = 85;
 
 			if ( this.className == 'link-button' ) {
 				// go to link
