@@ -86,6 +86,24 @@
 
 	let smoothScrollOffset = 85;
 
+	//Handle click for notification bar
+	$( 	'div.notification-bar .close-button' )
+		.click( function( event ) {
+			Cookies.set('notificationMessage_LastReceived', new String( new Date() ) );
+			Cookies.set('notificationStatus', 'none');
+			$( 'div.notification-bar' ).hide();
+			setScroll(70);
+			let smoothScrollOffset = 85;
+
+			if ( this.className == 'link-button' ) {
+				// go to link
+			} else {
+				return false;
+			}
+			
+		}
+	);
+
 	var showNotificationBar = function ( messageDate ) {
 
 		var lastMessageReceived;
@@ -363,22 +381,6 @@
 			$('li.tab-link.'+ platform ).trigger('click');
 		}
 	}
-
-	//Handle click for notification bar
-	$( 	'div.notification-bar .close-button' )
-		.click( function( event ) {
-			Cookies.set('notificationMessage_LastReceived', new String( new Date() ) );
-			Cookies.set('notificationStatus', 'none');
-			$( 'div.notification-bar' ).hide();
-
-			if ( this.className == 'link-button' ) {
-				// go to link
-			} else {
-				return false;
-			}
-			
-		}
-	);
 
 
 
