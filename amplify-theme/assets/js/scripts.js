@@ -469,4 +469,4 @@ showNotificationBar( new Date('August 27, 2018 9:00:00') );
 		});
 
 		return false;
-	}	showNotificationBar( new Date('August 27, 2018 9:00:00') );
+	}
