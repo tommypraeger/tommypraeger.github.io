@@ -39,15 +39,6 @@
     }
 }
 
-.inline-bash {
-    display: inline-block;
-    font-family: "Source Code Pro",monospace;
-    color: #c0341d;
-    background-color: #fcefed;
-    border-radius: .1875rem;
-    padding: .125rem .375rem .1875rem .375rem;
-}
-
 .site-header {
 	position: fixed;
 	//width: 1442px;
@@ -173,6 +164,66 @@
 .col-xs-12 {
     margin-top: 1%;
 }
+
+.dropbtn {
+    color: #828282;
+    font-family: "Amazon Ember", "Helvetica", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #828282;
+    font-family: "Amazon Ember", "Helvetica", sans-serif;
+    font-size: 16px;
+    height: 32px;
+    font-weight: 500;
+    padding: 4px 10px;
+    text-decoration: none;
+    display: block;
+    border-bottom: none !important;
+
+    p {
+        display: inline-block;
+    }
+}
+
+.dropdown-content a:hover p {
+    border-bottom: 2px solid #FF9900;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:active .dropdown-content {
+    display: block;
+}
+
+
+.dropbtn:hover {
+    border-bottom: 2px solid #FF9900;
+}
+
 
 /* ----- Navigation ----- */
 .site-header__nav {
@@ -1028,6 +1079,7 @@ a {
         }
     }
 
+
     .cloud-grid-item:hover {
         border-color: #FF9900;
     }
@@ -1246,7 +1298,7 @@ a {
         font-size: 16px;
         line-height: 24px;
         margin-bottom: 10px;
-        width: 100%;
+        width: 90%;
         display: block;
     }
 }
@@ -1788,10 +1840,6 @@ li {
     text-decoration: underline;
 }
 
-#npm-link:hover {
-    text-decoration: underline;
-}
-
 .amplify-link-box {
     margin-bottom: 20px;
 }
@@ -1827,70 +1875,20 @@ li {
     transform: rotate(-90deg);
 }
 
-.from-awsmobile {
-    display: inline-block;
-    position: relative;
-    left: 15px;
-    bottom: 30px;
-    font-family: "Amazon Ember", "Helvetica", sans-serif;
-}
-
-.video {
-    float: right;
-}
-
 .section-top-quickstart {
     margin-top: 0;
     margin-bottom: 34px;
 
     .section-code-block {
-        width: 50%;
+        width: 90%;
         padding-bottom: 25px;
-
-        @media (max-width: 1219px) {
-            width: 100%;
-        }
 
         .highlight {
             .highlight {
                 padding-bottom: 10px;
             }
         }
-    }
 
-    .cli-content {
-        display: inline-block;
-        width: 50%;
-
-        div {
-            float: left;
-        }
-        ul {
-            float: left;
-        }
-        p {
-            float: left;
-        }
-
-        @media (max-width: 1219px) {
-            width: 90%;
-
-            div {
-                float: none;
-            }
-            ul {
-                float: none;
-            }
-            p {
-                float: none;
-            }
-        }
-    }
-
-    .video {
-        @media (max-width: 1219px) {
-            display: none;
-        }
     }
 
     #orange-logos {
@@ -2511,70 +2509,6 @@ li {
             max-width: 100% !important;
         }
 
-        .dropbtn {
-            color: #828282;
-            font-family: "Amazon Ember", "Helvetica", sans-serif;
-            font-size: 16px;
-            line-height: 24px;
-            font-weight: 500;
-            margin: 5px 10px;
-            border: none;
-            cursor: pointer;
-        }
-
-        .arrows {
-            -webkit-appearance: menulist;
-            -moz-appearance: menulist;
-            display: inline-block;
-            width: 12px;
-            vertical-align: middle;
-            margin-right: 5px;
-        }
-        
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-        
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-        }
-        
-        .dropdown-content a {
-            color: #828282;
-            font-family: "Amazon Ember", "Helvetica", sans-serif;
-            font-size: 16px;
-            height: 32px;
-            font-weight: 500;
-            padding: 4px 10px;
-            text-decoration: none;
-            display: block;
-            border-bottom: none !important;
-        
-            p {
-                display: inline-block;
-            }
-        }
-        
-        .dropdown-content a:hover p {
-            border-bottom: 2px solid #FF9900;
-        }
-        
-        .dropdown-content a:hover {background-color: #f1f1f1}
-        
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-        
-        .dropdown:active .dropdown-content {
-            display: block;
-        }
-
         .js-library-selector {
             z-index: 999;
             background-color: #FF9900;
@@ -2591,8 +2525,7 @@ li {
 
             img {
                 height: 20px;
-                left: 4px;
-                margin-left: 5px;
+                left: 10px;
                 position: relative;
                 vertical-align: text-bottom;
                 filter: brightness(0) invert(1);
@@ -2846,10 +2779,6 @@ li {
             bottom: 450px;
             margin-bottom: -450px;
         }
-    }
-
-    #cli-much-more:hover {
-        text-decoration: underline;
     }
 }
 
@@ -3125,6 +3054,64 @@ li {
             .style-category {
                 color: #232F3E !important;
             }     
+        }
+    }
+}
+
+.relative {
+    position: relative;
+}
+
+.docs-header {
+    #search-input-xs {
+        right: -12px;
+        top: -1px;
+    }
+}
+
+#docs-edit-bar {
+    position: absolute;
+    right: 0;
+    top: 62px;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,.3);
+    height: 30px;
+    padding: 0px 10px;
+
+    @media (max-width: 998px) {
+        top: 99px;
+    }
+
+    a {
+        display: inline-block;
+        padding: 0 5px;
+
+        p {
+            display: inline-block;
+            color: #232F3E;
+            margin: 0;
+        }
+
+        img {
+            height: 24px;
+            vertical-align: middle;
+            filter: opacity(75%);
+        }
+    
+        #twitter-logo {
+            height: 28px;
+            position: relative;
+            bottom: 2px;
+            left: 5px;
+            filter: brightness(0) opacity(75%);
+        }
+    }
+
+    a:hover {
+        p {
+            color: #FF9900;
         }
     }
 }
