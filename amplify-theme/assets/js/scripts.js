@@ -92,8 +92,8 @@
 			Cookies.set('notificationMessage_LastReceived', new String( new Date() ) );
 			Cookies.set('notificationStatus', 'none');
 			$( 'div.notification-bar' ).hide();
-			setScroll(70);
 			smoothScrollOffset = 85;
+			setScroll(window.document, window.history, window.location, 70);
 
 			if ( this.className == 'link-button' ) {
 				// go to link
