@@ -109,7 +109,7 @@ var showNotificationBar = function ( messageDate ) {
 }
 
 // When the last message is received. Typicaly the announcement time
-showNotificationBar( new Date('August 1, 2018 11:42:00') );
+showNotificationBar( new Date('August 27, 2018 9:00:00') );
 
   	// get UR parameters
 	$.urlParam = function(name){
@@ -469,4 +469,4 @@ showNotificationBar( new Date('August 1, 2018 11:42:00') );
 		});
 
 		return false;
-	}
+	}	showNotificationBar( new Date('August 27, 2018 9:00:00') );
