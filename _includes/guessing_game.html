@@ -1,0 +1,23 @@
+<div id="guessing-game-container" class="page-container">
+        <div id="game-options">
+            <div>
+                <label for="max-number">Maximum number</label>
+                <input type="number" id="max-number" placeholder=1000 />
+            </div>
+            <div>
+                <label for="max-guesses">Maximum guesses*</label>
+                <input type="number" id="max-guesses" />
+                <p class="note">*defaults to log<sub>2</sub><i>n</i> if left blank, where <i>n</i> is the maximum value of the random number</p>
+            </div>
+            </fieldset>
+        </div>
+
+        <div id="game-container">
+            <div id="toggle-game-options">Show Options</div>
+            <div id="guess-container">
+                <label for="guess">Your guess:</label>
+                <input type="number" id="guess" />
+                <p>The answer is</p><p id="higher-lower"></p>
+            </div>
+        </div>
+</div>

@@ -1,0 +1,276 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    transition: 0.5s;
+
+    #nav-header {
+        max-width: 1200px;
+        min-width: 650px;
+        width: 80%;
+        position: sticky;
+        position: -webkit-sticky;
+        position: -moz-sticky;
+        position: -ms-sticky;
+        position: -o-sticky;
+        top: 0;
+        font-size: 20px;
+        letter-spacing: 1px;
+        margin: auto;
+        z-index: 1;
+
+        #nav-choices {
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            box-shadow: 0px 0px 10px $color-dark-tertiary;
+
+            .nav-choice {
+                padding: 10px;
+                display: inline-block;
+                border-right: 1px solid;
+                cursor: pointer;
+            }
+
+            #social {
+                border-right: 0;
+            }
+
+            #guessing-game {
+                border-right: 0;
+            }
+        }
+
+        #theme-select {
+            float: right;
+            position: relative;
+            padding: 10px;
+            cursor: pointer;
+            box-shadow: 0px 0px 10px $color-dark-tertiary;
+        }
+    }
+
+    .page-container {
+        position: relative;
+        top: 100px;
+        max-width: 1200px;
+        min-width: 650px;
+        width: 80%;
+        margin: auto;
+        border-radius: 100px;
+        display: none;
+        box-shadow: 0px 0px 10px $color-dark-tertiary;
+    }
+}
+
+.light {
+    background-color: $color-light;
+    color: black;
+
+    #nav-header {
+
+        #nav-choices {
+            border-color: $color-dark;
+
+            .nav-choice {
+                border-color: $color-dark;
+                background-color: $color-light-secondary;
+
+                &:hover {
+                    background-color: $color-light-tertiary;
+                }
+
+                &.selected {
+                    background-color: $color-light-blue;
+                }
+            }
+        }
+
+        #theme-select {
+            border-color: $color-dark;
+            background-color: $color-light-secondary;
+
+            &:hover {
+                background-color: $color-light-tertiary;
+            }
+        }
+    }
+
+    .page-container {
+        background-color: $color-light-secondary;
+    }
+
+    #game-options {
+        background-color: $color-light-blue
+    }
+
+    .social-link {
+        border-color: black;
+    }
+}
+
+.dark {
+    background-color: $color-dark;
+    color: white;
+
+    #nav-header {
+
+        #nav-choices {
+            border-color: $color-light;
+
+            .nav-choice {
+                border-color: $color-light;
+                background-color: $color-dark-secondary;
+
+                &:hover {
+                    background-color: $color-dark-tertiary;
+                }
+
+                &.selected {
+                    background-color: $color-blue;
+                }
+            }
+        }
+
+        #theme-select {
+            border-color: $color-light;
+            background-color: $color-dark-secondary;
+
+            &:hover {
+                background-color: $color-dark-tertiary;
+            }
+        }
+    }
+
+    .page-container {
+        background-color: $color-dark-secondary;
+    }
+
+    #game-options {
+        background-color: $color-blue
+    }
+
+    canvas {
+        filter: invert(1);
+    }
+
+    .social-link {
+        border-color: white;
+    }
+}
+
+/**************************************************
+ ***************** GUESSING GAME ******************
+ **************************************************/
+
+#guessing-game-container {
+    #game-options {
+        height: 100%;
+        width: 0;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        transition: 0.5s;
+        border-top-left-radius: 38px;
+        border-bottom-left-radius: 38px;
+    }
+    
+    #game-container {
+        transition: margin-left .5s;
+        padding: 20px;
+
+        #guess-container {
+            text-align: center;
+            width: 100%;
+        }
+    }
+    
+    @media screen and (max-height: 450px) {
+        #game-options {padding-top: 15px;}
+        #game-options {font-size: 18px;}
+    }
+}
+
+/*************************************************
+ ********************* HOME **********************
+ *************************************************/
+
+#home-container {
+    #content-container {
+        padding: 40px;
+    }
+
+    canvas {
+        margin: auto;
+        display: block;
+    }
+}
+
+/*************************************************
+ ******************** SOCIAL *********************
+ *************************************************/
+
+#social-container {
+    padding: 40px;
+    
+    #social-links-container {
+        width: 100%;
+        margin: auto;
+        display: block;
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .social-link {
+            margin: 8px;
+            width: calc(50% - 18px);
+            display: inline-block;
+            border: 1px solid;
+            border-radius: 5px;
+
+            @media screen and (max-width: 684px) {
+                width: calc(100% - 18px);
+            }
+
+            .social-content {
+                padding: 20px;
+
+                img {
+                    display: inline-block;
+                    vertical-align: text-bottom;
+                    height: 32px;
+                }
+
+                .social-text {
+                    display: inline-block;
+                    margin-left: 15px;
+                    font-size: 24px;
+                    color: white;
+                }
+            }
+
+            &:hover {
+                filter: brightness(1.3);
+            }
+        }
+
+        #linkedin {
+            background-image: linear-gradient(#0077B5, $color-dark-secondary);
+        }
+
+        #github {
+            background-image: linear-gradient(#24292E, $color-dark-secondary);
+        }
+
+        #facebook {
+            background-image: linear-gradient(#3B5998, $color-dark-secondary);
+        }
+
+        #twitter {
+            background-image: linear-gradient(#1DA1F2, $color-dark-secondary);
+        }
+    }
+}
