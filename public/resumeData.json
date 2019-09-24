@@ -1,0 +1,113 @@
+{
+  "main": {
+    "name": "Tommy Praeger",
+    "occupation": "Software Developer",
+    "description": "Here will be your description. Use this to describe what you do or whatever you feel best describes yourself to a potential employer",
+    "profilePic": "profilepic.jpg",
+    "bio": "I'm a computer science major at Northwestern University, graduating in June 2020. I've interned for AWS the past two summers. I spend way too much time looking at sports statistics and researching for my fantasy football team.",
+    "contactMessage": "Here is where you should write your message to readers to have them get in contact with you.",
+    "email": "thomaspraeger2020@u.northwestern.edu",
+    "phone": "(551) 795-6343",
+    "address": {
+      "street": "2226 Sherman Ave",
+      "city": "Evanston",
+      "state": "IL",
+      "zip": "60201"
+    },
+    "website": "https://tommypraeger.github.io",
+    "resumeDownload": "/Thomas_Praeger.pdf",
+    "social": [
+      {
+        "name": "facebook",
+        "url": "https://www.facebook.com/tommy.praeger",
+        "className": "fa fa-facebook"
+      },
+      {
+        "name": "twitter",
+        "url": "https://twitter.com/TommyPraeger",
+        "className": "fa fa-twitter"
+      },
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/thomas-praeger/",
+        "className": "fa fa-linkedin"
+      },
+      {
+        "name": "github",
+        "url": "https://github.com/tommypraeger",
+        "className": "fa fa-github"
+      }
+    ]
+  },
+  "resume": {
+    "skillmessage": "Here you can create a short write-up of your skills to show off to employers",
+    "education": [
+      {
+        "school": "University?",
+        "degree": "Masters in Beer tasting",
+        "graduated": "April 2007",
+        "description": "Describe your experience at school, what you learned, what useful skills you have acquired etc."
+      },
+      {
+        "school": "School #1 Maybe College?",
+        "degree": "What did you study 101",
+        "graduated": "March 2003",
+        "description": "Describe your experience at school, what you learned, what useful skills you have acquired etc."
+      }
+    ],
+    "work": [
+      {
+        "company": "Awesome Design Studio",
+        "title": "Senior UX God ",
+        "years": "March 2010 - Present",
+        "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+      },
+      {
+        "company": "Super Cool Studio",
+        "title": "Junior bug fixer",
+        "years": "March 2007 - February 2010",
+        "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+      }
+    ],
+    "skills": [
+      {
+        "name": "Git",
+        "level": "60%"
+      },
+      {
+        "name": "Illustrator",
+        "level": "55%"
+      },
+      {
+        "name": "ReactJs",
+        "level": "50%"
+      },
+      {
+        "name": "CSS",
+        "level": "90%"
+      },
+      {
+        "name": "HTML5",
+        "level": "80%"
+      },
+      {
+        "name": "VueJs",
+        "level": "50%"
+      },
+      {
+        "name": "MongoDB",
+        "level": "80%"
+      }
+    ]
+  },
+  "portfolio": {
+    "projects": [
+      {
+        "title": "Fantasy Sports Analytics",
+        "category": "This is a website that automatically provides data for expected standings and win distributions of teams in fantasy leagues. Hoping to expand the functionality of this website at some point. ",
+        "image": "fantasy-sports-analytics.png",
+        "url": "https://fantasy-sports-analytics.com"
+      }
+    ]
+  }
+}
